@@ -1,4 +1,4 @@
-{% set version = '0.80' %}
+{% set version = "0.81" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/readtext_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/readtext/readtext_{{ version }}.tar.gz
-  sha256: be0016339eb081a60e26cbe9dd779695378edff8a2ce7b49809bbb94ae950a61
+  sha256: 6c705976dc9f6093c2d50b3dae00b625302826c3ce63a3102cbb680b0b14e84c
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -63,11 +63,9 @@ test:
 about:
   home: https://github.com/quanteda/readtext
   license: GPL-3.0-only
-  summary: Functions for importing and handling text files and formatted text files with additional
-    meta-data, such including '.csv', '.tab', '.json', '.xml', '.html', '.pdf', '.doc',
-    '.docx', '.rtf', '.xls', '.xlsx', and others.
+  summary: Functions for importing and handling text files and formatted text files with additional meta-data, such including '.csv', '.tab', '.json', '.xml', '.html', '.pdf', '.doc', '.docx', '.rtf', '.xls', '.xlsx', and others.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
