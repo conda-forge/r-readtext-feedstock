@@ -1,11 +1,11 @@
-About r-readtext
-================
+About r-readtext-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-readtext-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/quanteda/readtext
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-readtext-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions for importing and handling text files and formatted text files with additional meta-data, such including '.csv', '.tab', '.json', '.xml', '.html', '.pdf', '.doc', '.docx', '.rtf', '.xls', '.xlsx', and others.
 
