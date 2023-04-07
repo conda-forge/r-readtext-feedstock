@@ -1,4 +1,4 @@
-{% set version = "0.81" %}
+{% set version = "0.82" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/readtext_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/readtext/readtext_{{ version }}.tar.gz
-  sha256: 6c705976dc9f6093c2d50b3dae00b625302826c3ce63a3102cbb680b0b14e84c
+  sha256: 3abc4e9001dbc6a467cfbcd460a6be0130fa03bff6b7cfa821751052dc56408e
 
 build:
   noarch: generic
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
